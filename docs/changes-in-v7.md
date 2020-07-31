@@ -132,7 +132,7 @@
 - #1222 Added `vue/no-empty-component-block` rule disallows the `<template>` `<script>` `<style>` block to be empty.
 - #1238 Added `vue/no-lone-template` rule that disallow unnecessary `<template>` element.
 - #1239 Added `vue/no-dupe-v-else-if` rule that disallow duplicate conditions in `v-if` / `v-else-if` chains.
-- #1267 Added `v-for-delimiter-style` rule that enforces which delimiter (`in` or `of`) should be used in `v-for` directives.
+- #1267 Added `vue/v-for-delimiter-style` rule that enforces which delimiter (`in` or `of`) should be used in `v-for` directives.
 
 #### Core Extends:
 
