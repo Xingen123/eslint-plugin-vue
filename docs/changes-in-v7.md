@@ -3,7 +3,7 @@
 - Support for Vue.js 3.x.
 - Support for ESLint 7.x.
 - Support for ECMAScript 2020.
-- Added 61 new rules.
+- Added 62 new rules.
 
 ## 💥 Breaking Changes
 
@@ -132,6 +132,7 @@
 - #1222 Added `vue/no-empty-component-block` rule disallows the `<template>` `<script>` `<style>` block to be empty.
 - #1238 Added `vue/no-lone-template` rule that disallow unnecessary `<template>` element.
 - #1239 Added `vue/no-dupe-v-else-if` rule that disallow duplicate conditions in `v-if` / `v-else-if` chains.
+- #1267 Added `v-for-delimiter-style` rule that enforces which delimiter (`in` or `of`) should be used in `v-for` directives.
 
 #### Core Extends:
 
@@ -173,6 +174,7 @@
 - #1254 Changed the `vue/attributes-order` rule to handle `v-is` as `DEFINITION` category.
 - #1254 Changed the `vue/no-unregistered-components` rule to handle `v-is` like `:is`.
 - #1254 Changed the `vue/no-unused-components` rule to handle `v-is` like `:is`.
+- #1258 Changed to report `slot-scope` when `"^3.0.0"` is set in `vue/no-unsupported-features` rule.
 
 #### Commons:
 
@@ -201,6 +203,7 @@
 - #1208 Fixed false negatives for TemplateLiteral in `vue/prop-name-casing` rule.
 - #1206 Fixed crash when `is` attribute with no value in `vue/no-unused-components` rule.
 - #1242 Fixed `vue/require-valid-default-prop` and `vue/require-default-prop` rules crash on sparse arrays.
+- #1262 Fixed reporting "Use the latest vue-eslint-parser" message in non-vue files.
 
 ----
 
